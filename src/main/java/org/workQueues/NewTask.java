@@ -26,7 +26,7 @@ public class NewTask {
             CountDownLatch latch = new CountDownLatch(1);
 
             publisher.publish(
-                    publisher.message(messageOut.getBytes(StandardCharsets.UTF_8)),
+                    publisher.message(messageOut.getBytes(StandardCharsets.UTF_8)).durable(true),
                     context -> {
                         if (context.status() == Publisher.Status.ACCEPTED) {
                             System.out.println(" [x] Sent '" + messageOut + "'");

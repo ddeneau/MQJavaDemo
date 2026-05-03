@@ -12,13 +12,6 @@ import java.util.concurrent.CountDownLatch;
 public class Worker {
 
     private static final String QUEUE_NAME = "testQueue";
-
-    private static void doWork(String task) throws InterruptedException {
-        for (char ch: task.toCharArray()) {
-            if (ch == '.') Thread.sleep(1000);
-        }
-    }
-
     public static void main(String[] argv) {
         try {
             Environment environment = new AmqpEnvironmentBuilder()
@@ -31,8 +24,8 @@ public class Worker {
             connection.management().queue(QUEUE_NAME).quorum().queue().declare();
             System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
 
-
-            connection.consumerBuilder()
+            // The tutorial says to write it like this even though the variable is unused for now...probably for later.
+            Consumer consumer = connection.consumerBuilder()
                     .queue(QUEUE_NAME)
                     .messageHandler((context, message) -> {
                         String text = new String(message.body(), StandardCharsets.UTF_8);
@@ -50,10 +43,19 @@ public class Worker {
                     })
                     .build();
 
+            new CountDownLatch(1).await();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
 
     }
+
+    private static void doWork(String task) throws InterruptedException {
+        for (char ch: task.toCharArray()) {
+            if (ch == '.') Thread.sleep(1000);
+        }
+    }
+
 
 }
