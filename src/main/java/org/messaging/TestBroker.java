@@ -1,5 +1,6 @@
 package org.messaging;
 
+// Demonstrates Send/Recv classes using multithreading.
 public class TestBroker {
     static Recv recv;
     static Send sender;

@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6a4d530-4297-4f68-93d5-30cf11bb5df1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/messaging/java/org/messaging/TestBroker.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/TestBroker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/messaging/Recv.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/messaging/Send.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/messaging/TestBroker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/workQueues/NewTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/workQueues/Worker.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/messaging/TestBroker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/messaging/TestBroker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/workQueues/NewTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/workQueues/NewTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/workQueues/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/workQueues/Worker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +64,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="B:\Java Projects\FlightMessagingDemo\untitled\src\main" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Send" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.messaging.Send" />

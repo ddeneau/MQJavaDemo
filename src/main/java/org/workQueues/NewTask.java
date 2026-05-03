@@ -6,6 +6,7 @@ import com.rabbitmq.client.amqp.impl.AmqpEnvironmentBuilder;
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.CountDownLatch;
 
+// Message Sender demonstrating Round-robin dispatching using a Task Queue.
 public class NewTask {
     private static final String QUEUE_NAME = "testQueue";
 
